@@ -23,9 +23,6 @@ _testmain.go
 *.test
 *.prof
 
-.gitignore
-.gitmodules
-
 bin/*
 pkg/*
 *.log
