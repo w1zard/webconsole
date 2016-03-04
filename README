@@ -1,4 +1,8 @@
 更新日志
+2016.03.05
+
+    新增:
+        1、增加 Dockerfile
 
 2016.03.04 发布 v1.1
 
@@ -20,6 +24,8 @@
 
 Git@OSC: http://git.oschina.net/shibingli/webconsole
 Github:  https://github.com/shibingli/webconsole
+
+演示地址:  http://shibingli-webconsole.daoapp.io   (通过DaoCloud的Docker构建)
     
 
 程序包结构：
