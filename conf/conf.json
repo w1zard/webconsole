@@ -1,0 +1,17 @@
+{
+    "web": {
+        "addr": ":8080",
+        "tls_addr": ":8443",
+        "tls_url": "https://www.apibox.club:8443",
+        "static_dir": "static",
+        "template_dir": "template/default",
+        "template_suffix": ".html",
+        "session_timeout": 1800,
+        "enable_gzip": true,
+        "enable_tls": false,
+        "enable_fcgi": false,
+        "tls_cert": "ssl_cert.crt",
+        "tls_key": "ssl_cert.key",
+        "daemon": true
+    }
+}
