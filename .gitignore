@@ -21,3 +21,4 @@ _testmain.go
 *.[568vq]
 [568vq].out
 *.pid
+*.pid?
