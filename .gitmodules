@@ -1,3 +1,4 @@
+# GitModules
 [submodule "src/golang.org/x/build"]
 	path = src/golang.org/x/build
 	url = https://github.com/golang/build.git
