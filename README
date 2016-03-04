@@ -14,6 +14,10 @@
         1、增加后台运行模式(conf/conf.json.  daemon:true/false);
         2、增加程序运行时的PID文件(log/apibox.pid);
 
+大概的数据流向：
+
+    浏览器--》WebSocket--》SSH--》Linux OS
+    
 
 程序包结构：
 ├── bin
