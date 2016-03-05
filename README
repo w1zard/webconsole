@@ -27,7 +27,7 @@
 Git@OSC: http://git.oschina.net/shibingli/webconsole
 Github:  https://github.com/shibingli/webconsole
 
-演示地址:  http://www.pangu.cloud   (通过DaoCloud的Docker构建)
+演示地址:  http://www.pangu.cloud   (通过DaoCloud的Docker服务构建)
     
 
 程序包结构：
