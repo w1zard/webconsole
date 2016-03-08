@@ -22,4 +22,4 @@ RUN cd /data/apibox/src/apibox.club/apibox/ && go install
 
 EXPOSE 8080
 
-CMD ["/data/apibox/bin/apibox","start"] 
+CMD /data/apibox/bin/apibox start
