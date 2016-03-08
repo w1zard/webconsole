@@ -6,7 +6,7 @@ ENV LANGUAGE en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
-RUN apt-get -yq update && apt-get -yq upgrade
+RUN apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade
 RUN apt-get -yq install git curl
 
 
@@ -22,4 +22,4 @@ RUN cd /data/apibox/src/apibox.club/apibox/ && go install
 
 EXPOSE 8080
 
-CMD /data/apibox/bin/apibox start 
+CMD ["/data/apibox/bin/apibox","start"] 
