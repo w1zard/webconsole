@@ -12,7 +12,7 @@ ENV PATH /usr/local/go/bin:$PATH
 
 ADD . /data/apibox
 ENV GOPATH /data/apibox
-RUN cd /data/apibox/src/apibox.club/apibox/ && go install
+RUN cd /data/apibox/src/apibox.club/apibox/ && /usr/local/go/bin/go install
 
 EXPOSE 8080
 
