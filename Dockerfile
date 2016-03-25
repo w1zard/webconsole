@@ -1,4 +1,4 @@
-FROM ubuntu:15.10
+FROM alpine:3.3
 
 MAINTAINER Eric Shi <postmaster@apibox.club>
 
@@ -6,7 +6,7 @@ ENV LANGUAGE en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
-RUN apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade && apt-get -yq install git curl
+RUN apk --update add nginx git curl
 RUN mkdir -p /data/tools && mkdir -p /data/apibox && cd /data/tools && curl -L 'http://www.golangtc.com/static/go/1.6/go1.6.linux-amd64.tar.gz' | tar -zx -C /usr/local
 
 ENV PATH /usr/local/go/bin:$PATH
