@@ -6,19 +6,14 @@ ENV LANGUAGE en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
-RUN apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade
-RUN apt-get -yq install git curl
+RUN apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade && apt-get -yq install git curl
+RUN mkdir -p /data/tools && mkdir -p /data/apibox && cd /data/tools && curl -L 'http://www.golangtc.com/static/go/1.6/go1.6.linux-amd64.tar.gz' | tar -zx -C /usr/local
 
-
-RUN mkdir -p /data/tools
-RUN cd /data/tools && curl -L 'http://www.golangtc.com/static/go/1.6/go1.6.linux-amd64.tar.gz' | tar -zx -C /usr/local
 ENV PATH /usr/local/go/bin:$PATH
 
-RUN mkdir -p /data/apibox
 ADD . /data/apibox
 ENV GOPATH /data/apibox
 RUN cd /data/apibox/src/apibox.club/apibox/ && go install
-
 
 EXPOSE 8080
 
