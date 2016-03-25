@@ -6,7 +6,8 @@ ENV LANG en_US.UTF-8
 
 RUN apk --update add tar git wget
 RUN mkdir -p /data/tools && mkdir -p /data/apibox 
-RUN cd /data/tools && wget http://www.golangtc.com/static/go/1.6/go1.6.linux-amd64.tar.gz | tar -zx -C /usr/local
+RUN cd /data/tools && wget http://www.golangtc.com/static/go/1.6/go1.6.linux-amd64.tar.gz 
+RUN cd /data/tools && tar -zxvf go1.6.linux-amd64.tar.gz -C /usr/local
 
 ENV PATH /usr/local/go/bin:$PATH
 
