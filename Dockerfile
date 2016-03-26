@@ -4,7 +4,7 @@ MAINTAINER Eric Shi <postmaster@apibox.club>
 
 ENV LANG en_US.UTF-8
 
-RUN apk update && apk upgrade && apk add go && mkdir -p /data/apibox 
+RUN apk update && apk upgrade && apk add --no-cache go && mkdir -p /data/apibox 
 ENV GOPATH /data/apibox
 
 ADD . /data/apibox
