@@ -4,7 +4,7 @@ MAINTAINER Eric Shi <postmaster@apibox.club>
 
 ENV LANG en_US.UTF-8
 
-RUN apk --update add tar git wget
+RUN apk add --no-cache --update-cache bash tar git wget
 RUN mkdir -p /data/tools && mkdir -p /data/apibox 
 ENV GOPATH /data/apibox
 
