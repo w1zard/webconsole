@@ -10,8 +10,9 @@ ENV GOPATH /data/apibox
 
 RUN cd /data/tools && wget https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz
 RUN cd /data/tools && tar -zxvf go1.6.linux-amd64.tar.gz -C /usr/local
-ENV PATH /usr/local/go/bin:$PATH
+
 ADD . /data/apibox
+ENV PATH /usr/local/go/bin:$PATH
 
 RUN cd /data/apibox/src/apibox.club/apibox/ && go install
 
