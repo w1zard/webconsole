@@ -9,7 +9,7 @@ RUN mkdir -p /data/tools && mkdir -p /data/apibox
 ENV GOPATH /data/apibox
 
 RUN cd /data/tools && wget http://www.golangtc.com/static/go/1.6/go1.6.linux-amd64.tar.gz 
-RUN cd /data/tools && tar -zxvf go1.6.linux-amd64.tar.gz -C /usr/local/go
+RUN cd /data/tools && tar -zxvf go1.6.linux-amd64.tar.gz -C /usr/local
 ENV PATH /usr/local/go/bin:$PATH
 ADD . /data/apibox
 
