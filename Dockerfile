@@ -1,4 +1,4 @@
-FROM ubuntu:15.10
+FROM ubuntu:16.04
 
 MAINTAINER Eric Shi <postmaster@apibox.club>
 
@@ -10,7 +10,7 @@ RUN apt-get -yq update && apt-get -yq upgrade && apt-get -yq install curl
 
 
 RUN mkdir -p /data/tools && mkdir -p /data/apibox
-RUN cd /data/tools && curl -L 'http://www.golangtc.com/static/go/1.6.1/go1.6.1.linux-amd64.tar.gz' | tar -zx -C /usr/local
+RUN cd /data/tools && curl -L 'http://www.golangtc.com/static/go/1.6.2/go1.6.2.linux-amd64.tar.gz' | tar -zx -C /usr/local
 ENV PATH /usr/local/go/bin:$PATH
 
 ADD . /data/apibox
