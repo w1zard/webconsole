@@ -6,7 +6,7 @@ ENV LANGUAGE en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
-RUN apt-get -yq update && apt-get -yq upgrade && apt-get -yq install curl
+RUN apt -y update && apt -y upgrade && apt -y install curl
 
 
 RUN mkdir -p /data/tools && mkdir -p /data/apibox
